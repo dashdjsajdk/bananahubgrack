@@ -5080,6 +5080,7 @@ spawn(
                         else
                             if game.ReplicatedStorage.Remotes.CommF_:InvokeServer("CheckBlockPart") then
                             elseif game.ReplicatedStorage.Remotes.CommF_:InvokeServer("CheckBlockPart") then
+                                -- Your code block here                            
                                 if CheckBoss("Order [Lv. 1250] [Raid Boss]") then
                                     Target = ReturnBosses("Order [Lv. 1250] [Raid Boss]")
                                     KillMob(Target)
@@ -6810,7 +6811,7 @@ function PostWebhook(cm, cn)
 end
 
 function CheckExploitNgu(cq)
-    local cr = is_Arceus X_function and "exploit dot"
+    local cr = is_Arceus and is_Arceus() and "exploit dot"
     if cr ~= "exploit dot" then
         return isnetworkowner(cq)
     else
