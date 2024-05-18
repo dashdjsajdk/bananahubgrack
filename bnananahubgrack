@@ -3773,7 +3773,7 @@ task.spawn(
     end
 )
 loadstring(
-    [[
+    
     local gg = getrawmetatable(game)
     local old = gg.__namecall
     setreadonly(gg, false)
@@ -3798,10 +3798,10 @@ loadstring(
             return old(...)
         end
     )
-]]
+
 )()
 loadstring(
-    [[
+    
     local gt = getrawmetatable(game)
 	local old = gt.__namecall
 	setreadonly(gt,false)
@@ -3816,7 +3816,7 @@ loadstring(
 		end
 		return old(unpack(args))
 	end)
-]]
+
 )()
 D:AddSection({Name = "Farm"})
 AutoActiveRace_Toggle =
